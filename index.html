@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description"
+  content="Embarque em uma trajetória inspiradora e inclusiva com nosso REA sobre a “História dos Jogos Paralímpicos”. #UNIVESP">
+
+  <title>Univesp | História do Brasil nos Jogos Paralímpicos</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+
+  <!--[if gte mso 9]><xml>
+  <mso:CustomDocumentProperties>
+  <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">William Kimura</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+  <mso:Order msdt:dt="string">23300.0000000000</mso:Order>
+  <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Celso Roberto Lourenco</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+  <mso:ContentTypeId msdt:dt="string">0x010100A38F8AD45AFCC2449EE864BD78216A31</mso:ContentTypeId>
+  <mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+  <mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+  <mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+  <mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+  <mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+  <mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+  </mso:CustomDocumentProperties>
+  </xml><![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/colorida-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+    <header>
+      <div class="container abertura text-center">
+        <div class="row">
+          <div class="col-12 col-lg-1"></div>
+          <div class="col-12 col-lg-3">
+            <img class="logo" src="assets/logo.svg" alt="logo dos jogos paralímpicos">
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="destaque">
+              <div class="titulo_menor">HISTÓRIA DO BRASIL NOS</div>
+              <div class="titulo_maior">JOGOS PARALÍMPICOS</div>
+              <p>Navegue por esta linha do tempo interativa acessível, role a tela para obter as informações de cada ano. Bons estudos!
+          <p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-1"></div>
+        </div>
+      </div>
+    </header>
+    <section class="timeline">
+      <div class="container">
+        <div class="timeline-item">
+        <!-- <ul class="linha"> -->
+        <hr class="linha"/>
+        <!-- </ul> -->
+        <h2></h2>
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date date_verde">1948</div>
+            <p>Os Jogos de Stoke Mandeville (origem dos Jogos Paralímpicos), foram realizados pela primeira vez em 29 de julho, no Hospital de Stoke Mandeville na Inglaterra, organizados pelo neurologista alemão de origem judaica Dr. Ludwig Guttmann (1899-1980), para veteranos da Segunda Guerra Mundial, com lesões na medula espinhal. A primeira competição contou com a participação de 16 militares feridos, que competiram no tiro com arco.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+            <div class="date date_azul">1952</div>
+              <p>Os Jogos de Stoke Mandeville se tornaram internacionais.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_vermelho">1958</div>
+            <p>O primeiro esporte adaptado praticado no Brasil foi o basquete em cadeira de rodas. Enquanto realizavam tratamento médico nos Estados Unidos, brasileiros com deficiência conheceram a modalidade e a trouxeram para o país. Em consequência, foi fundado o Clube do Otimismo, no Rio de Janeiro, por iniciativa de Robson Sampaio de Almeida e pela ação do técnico Aldo Miccolis – dois pioneiros do Movimento no Brasil.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h2></h2>
+          <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_verde">1960</div>
+            <p>Ficou definido que a edição dos Stoke Mandeville Games seria levada para a cidade que sediava os Jogos Olímpicos. Essa foi considerada a primeira edição dos Jogos Paralímpicos da história, que foram realizados em Roma, na Itália. Este evento contou com a participação de cerca de 400 atletas de 23 países em 8 disciplinas.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date date_azul">1964</div>
+            <p>Em Tóquio, o Stoke Mandeville Games passou a ser conhecido como Jogos Paralímpicos.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_vermelho">1972</div>
+            <p>Ocorreu a primeira participação brasileira em uma edição dos Jogos Paralímpicos de Verão, em Heidelberg, na Alemanha. Naquele ano, a delegação brasileira era composta por 20 atletas, que disputaram medalhas em quatro modalidades. No entanto, o Brasil não conquistou medalhas.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_verde">1976</div>
+            <p>A primeira medalha paralímpica do país foi conquistada nos Jogos. Justamente por Robson Sampaio de Almeida, acompanhado de Luiz Carlos, o Curtinho, faturaram a prata na modalidade Lawn Bowls, antecedente da bocha e que era praticada na grama.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_azul">1988</div>
+            <p>A partir deste ano, se oficializou que os Jogos Paralímpicos seriam realizados na mesma cidade sede dos Jogos Olímpicos em sequência.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_vermelho">1989</div>
+            <p>Foi fundado o <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://www.paralympic.org/">Comitê Paralímpico Internacional (IPC)</a></strong>, o órgão que governa o esporte paralímpico de maneira global. Sua função é organizar os Jogos Paralímpicos de Verão e de Inverno, além de servir como federação internacional para dez modalidades, para as quais organiza Campeonatos Mundiais e outras competições. A organização é baseada em Bonn, na Alemanha.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_verde">1995</div>
+            <p>Em 9 de fevereiro, foi fundado o <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://www.youtube.com/watch?v=Mxx_kbfynR4">Comitê Paralímpico Brasileiro (CPB)</a></strong>, em sua primeira sede, em Niterói, no Rio de Janeiro.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_azul">1996</div>
+            <p>Tivemos uma delegação brasileira nos Jogos Paralímpicos de Atlanta. O Brasil terminou na 37ª colocação, com 21 medalhas, sendo dois ouros, seis pratas e 13 bronzes.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_vermelho">2000</div>
+            <p>Nos Jogos de Sydney, os brasileiros fecharam sua participação em 24º lugar e conquistaram 22 medalhas: seis ouros, dez pratas e seis bronzes.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_verde">2001</div>
+            <p>Foi sancionada a Lei Agnelo/Piva, fundamental no desenvolvimento do esporte adaptado no Brasil. A legislação estabeleceu o repasse de parte da arrecadação das loterias federais para os Comitês Olímpico e Paralímpico. Esta verba proporcionou ao paradesporto nacional avanços estruturais e técnicos.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_azul">2002</div>
+            <p>A sede do CPB foi transferida para Brasília, no Distrito Federal.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_vermelho">2004</div>
+            <p>Em Atenas, na Grécia, o Brasil subiu no ranking para o 14º lugar, com 33 medalhas, sendo 14 ouros, 12 pratas e sete bronzes.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_verde">2008</div>
+            <p>Em Pequim, com o Brasil ficou na nona colocação. Foram 47 conquistas, sendo 16 ouros, 14 pratas e 17 bronzes. O nadador brasileiro Daniel Dias terminou os jogos com quatro medalhas de ouro, quatro de prata e uma de bronze.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_azul">2009</div>
+            <p>Foi criado o Conselho de Atletas (CA) que tem como objetivo a representação dos atletas dentro do Comitê Paralímpico Brasileiro (CPB).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_vermelho">2010</div>
+            <p>Foi lançada a Academia Paralímpica Brasileira (APB).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_verde">2011</div>
+            <p>O Brasil adotava a palavra <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://www.paralympic.org/paralympic-games">paraolimpíada</a></strong>, mas alterou a nomenclatura do evento para paralimpíada após pedido do Comitê Paralímpico Internacional (IPC).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_azul">2012</div>
+            <p>Nos Jogos de Londres, a delegação brasileira terminou no 7º lugar no ranking geral, com 43 medalhas, sendo 21 de ouro, 14 de prata e 8 de bronze. O nadador brasileiro Daniel Dias conquistou mais seis medalhas de ouro paralímpicas em sua carreira.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_vermelho">2013</div>
+            <p>Foi oficializada a construção do primeiro <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://cpb.org.br/ct-paralimpico/centro-de-treinamento/">Centro de Treinamento Paralímpico do Brasil (CTB)</a></strong> em São Paulo, que foi inaugurado em maio de 2016.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_verde">2014</div>
+            <ul>
+              <li><p>Nos Jogos Paralímpicos de Inverno, o Brasil teve sua primeira aparição, nos Jogos de Sochi, na Rússia. O <i>snowboarder</i> André Cintra e o esquiador Fernando Aranha formaram a delegação brasileira em território russo.</p></li>
+              <li><p>Informação complementar: durante a Copa do Mundo no Brasil, foi apresentado o exoesqueleto controlado pelo cérebro, que faz parte do Projeto Andar de Novo, desenvolvido pelo neurocientista brasileiro Miguel Nicolelis (nascido em 1961) e sua equipe multidisciplinar de 156 pesquisadores de diversas partes do mundo, que ajudou pessoas tetraplégicas andarem. Este dispositivo utiliza eletrodos implantados no cérebro para captar sinais neurais, que são traduzidos em movimentos pelo exoesqueleto.</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date date_azul">2016</div>
+            <p>No Rio, o Brasil teve a melhor participação em relação ao total de medalhas: 72, sendo 14 de ouro, 29 de prata e 29 de bronze. O país terminou o evento na oitava colocação no quadro geral. O multimedalhista brasileiro Daniel Dias foi ao pódio nove vezes, levando quatro ouros, três pratas e dois bronzes.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_vermelho">2017</div>
+            <p>O Centro de Treinamento Paralímpico Brasileiro (CTB) foi palco dos Jogos Parapan Americanos de Jovens, competição que reuniu os melhores atletas juvenis do continente americano.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_verde">2018</div>
+            <p>Foram desenvolvidos projetos como <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://cpb.org.br/escola-paralimpica-de-esportes/">Escola Paralímpica de Esportes</a></strong>, que oportunizou o primeiro contato de crianças com deficiências com o esporte. Outras iniciativas, como o <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://cpb.org.br/programas/camping-escolar/">Camping Escolar Paralímpico</a></strong>, foram colocadas em prática. O <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://cpb.org.br/noticias/festival-do-dia-do-atleta-paralimpico-e-o-maior-evento-ja-promovido-pelo-cpb/">Festival Dia do Atleta Paralímpico</a></strong>, em 22 de setembro, reuniu mais de 7 mil crianças em 48 núcleos, por todos os estados do país, em ação inédita de expansão do Movimento pelo Brasil.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_azul">2023</div>
+            <p>O CPB realizou também o <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://cpb.org.br/competicoes/meeting-loterias-caixa/">Meeting Paralímpico Loterias Caixa</a></strong>. A competição teve a sua primeira etapa em julho e passou por dez cidades, com mais de 3 mil atletas inscritos: Manaus (AM), Campo Grande (MS), Rio de Janeiro (RJ), Belo Horizonte (MG), Brasília (DF), Fortaleza (CE), Recife (PE), Porto Alegre (RS), Curitiba (PR) e São Paulo (SP).</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInLeft">
+          <div class="date date_vermelho">2024</div>
+            <p>Na França, em 24 de julho, o atleta com deficiência Kevin Piette (paraplégico desde meados de 2013) carregou a tocha olímpica das Olimpíadas de Paris, usando um protótipo de exoesqueleto desenvolvido pela empresa Atalante X, para melhorar a locomoção de pessoas com deficiência física.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+        <div class="timeline-img"></div>
+          <div class="timeline-content js--fadeInRight">
+          <div class="date date_verde">2025</div>
+            <p>Inauguração de <strong><a style= "text-decoration: underline; color:#000;" target="_blank" href="https://univesp.br/noticias/univesp-e-secretaria-dos-direitos-da-pessoa-com-deficiencia-assinam-protocolo-para-instalacao-de-polo-acessivel">polo acessível</a></strong> da Universidade Virtual do Estado de São Paulo (Univesp). A unidade instalada no Parque Estadual Fontes do Ipiranga (PEFI) servirá de base para a Escola de Inclusão, da Secretaria dos Direitos da Pessoa com Deficiência (SEDPcD), além de capacitar os atletas paralímpicos, no Projeto Atleta Cidadão do Comitê Paralímpico Brasileiro (CPB) e oferecer 9 cursos de graduação. A cerimônia de inauguração teve as participações do secretário dos Direitos da Pessoa com Deficiência, Marcos da Costa, do secretário da SCTI, Vahan Agopyan, da secretária executiva da SCTI, Stephanie Costa, do presidente da Univesp, professor Marcos Borges, do superintendente do Centro Paula Souza (CPS), Clovis Dias, da diretora da Escola da Inclusão, Lubienska Ribeiro, e da orientadora de polo, Rita de Cassia Dantas, além de alunos da Univesp e colaboradores da SEDPcD. (Fonte: <strong><a style= "text-decoration: underline;word-break: break-all; color:#000;" target="_blank" href="https://univesp.br/noticias/univesp-inaugura-polo-na-escola-da-inclusao">https://univesp.br/noticias/univesp-inaugura-polo-na-escola-da-inclusao</a></strong>). Saiba mais por meio deste vídeo. <strong><a style= "text-decoration: underline;word-break: break-all; color:#000;" target="_blank" href="https://youtu.be/oU7hhBpO5Zw">https://youtu.be/oU7hhBpO5Zw</a></strong>.
+              <div class="video-container">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/oU7hhBpO5Zw?si=4Hfnm2TASWzv0tGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section id="governo">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <p class="subtitulo">PROGRAMAS DO GOVERNO DO ESTADO DE SÃO PAULO</p>
+            <a style= "text-decoration: underline; color:#fff;" class="governo" target="_blank" href="https://doe.sp.gov.br/executivo/secretaria-de-esportes/resolucao-n-14-de-23-de-setembro-de-2024-2024092611261220615351"><div><p class="marcatexto">Lei Paulista de Incentivo ao Esporte</p></div></a>
+            <a style= "text-decoration: underline; color:#fff;" class="governo" target="_blank" href="https://paralimpico.com.br/"><div style="padding-top:20px;"><p class="marcatexto">Programa de Desenvolvimento Paralimpico do Estado de São Paulo </p></div></a>
+            <a style= "text-decoration: underline; color:#fff;" class="governo" target="_blank" href="https://paralimpico.com.br/time-sao-paulo-paralimpico/"><div style="padding-top:20px;"><p class="marcatexto">Time São Paulo Paralimpico</p></div></a>
+            <a style= "text-decoration: underline; color:#fff;" class="governo" target="_blank" href="https://www.esportes.sp.gov.br/programa-talento-esportivo/"><div style="padding-top:20px;"><p class="marcatexto">Bolsa Talento Esportivo São Paulo</p></div></a>
+
+ 
+ 
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section id="video">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <p class="subtitulo">SAIBA MAIS NOS VÍDEOS A SEGUIR!</p>
+            <p>TV Brasil | Caminhos da Reportagem | Brasil paralímpico, potência em movimento:</p>
+            <div class="d-flex justify-content-center" style="padding-top:12px;">
+              <div class="video embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cUOTGEejADI?si=UnzCeE2aGVsq12rG" allowfullscreen></iframe> 
+              </div>
+            </div>
+            <p style="padding-top:30px;padding-bottom: 15px;">Univesp | Libras para todos | Esportes:</p>
+            <div class="d-flex justify-content-center">
+              <div class="video embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z2ZZ-4waNjQ?si=Q_cAJ6iEmToWdfro" allowfullscreen></iframe> 
+              </div>
+            </div>
+            <p style="padding-top:30px;padding-bottom: 15px;">Univesp | Libras para todos | Centro Paralímpico Brasileiro:</p>
+            <div class="d-flex justify-content-center">
+              <div class="video embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zLWOtWj-dqU?si=eB8yXUlafZtSxy7l" allowfullscreen></iframe> 
+              </div>
+            </div>
+
+            <p style="padding-top:30px;padding-bottom: 15px;">TV INES | A vida em Libras | Esportes Paralímpicos I:</p>
+            <div class="d-flex justify-content-center">
+              <div class="video embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QCQDso5A1e4?si=vvD1GJ4vOPTr1eyx" allowfullscreen></iframe> 
+              </div>
+            </div>
+
+            <p style="padding-top:30px;padding-bottom: 15px;">TV INES | A vida em Libras | Esportes Paralímpicos II:</p>
+            <div class="d-flex justify-content-center">
+              <div class="video embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s0Z4XSarGuw?si=cz84hlpEjtM5Jsst" allowfullscreen></iframe> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="icones">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <p class="subtitulo">ESPORTES PARALÍMPICOS DE VERÃO:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/atletismo/"><img class="icon" src="assets/Atletismo.svg" alt="Ícone de Atletismo"></a>
+            <p>Atletismo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/badminton/"><img class="icon" src="assets/Badminton.svg" alt="Ícone de Badminton"></a>
+            <p>Badminton</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/basquete-em-cr/"><img class="icon" src="assets/Basquete.svg" alt="Ícone de Basquete"></a>
+            <p>Basquete em cadeira de rodas</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/triatlo/"><img class="icon" src="assets/Triatlo.svg" alt="Ícone de Triatlo"></a>
+            <p>Triatlo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/bocha/"><img class="icon" src="assets/Bocha.svg" alt="Ícone de Bocha"></a>
+            <p>Bocha</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/canoagem/"><img class="icon" src="assets/Canoagem.svg" alt="Ícone de Canoagem"></a>
+            <p>Canoagem</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/esgrima-em-cr/"><img class="icon" src="assets/Esgrima.svg" alt="Ícone de Esgrima"></a>
+            <p>Esgrima em cadeiras de roda</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/futebol-de-cegos/"><img class="icon" src="assets/Futebol.svg" alt="Ícone de Futebol"></a>
+            <p>Futebol de cegos</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/futebol-pc/"><img class="icon" src="assets/FutebolPC.svg" alt="Ícone de Futebol PC"></a>
+            <p>Futebol PC</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/goalball/"><img class="icon" src="assets/Goalball.svg" alt="Ícone de Goalball"></a>
+            <p>Goalball</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/halterofilismo/"><img class="icon" src="assets/Halterofilismo.svg" alt="Ícone de Halterofilismo"></a>
+            <p>Halterofilismo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/hipismo/"><img class="icon" src="assets/Hipismo.svg" alt="Ícone de Hipismo"></a>
+            <p>Hipismo</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/judo/"><img class="icon" src="assets/Judo.svg" alt="Ícone de Judô"></a>
+            <p>Judô</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/natacao/"><img class="icon" src="assets/Natacao.svg" alt="Ícone de Natação"></a>
+            <p>Natação</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Paraescalada"><img class="icon" src="assets/Paraescalada.svg" alt="Ícone de Paraescalada"></a>
+            <p>Paraescalada</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/remo/"><img class="icon" src="assets/Remo.svg" alt="Ícone de Remo"></a>
+            <p>Remo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/rugbi-em-cr/"><img class="icon" src="assets/Rugby.svg" alt="Ícone de Rúgbi em cadeira de rodas"></a>
+            <p>Rúgbi em cadeira de rodas</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/taekwondo/"><img class="icon" src="assets/Taekwondo.svg" alt="Ícone de Taekwondo"></a>
+            <p>Taekwondo</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/tenis-de-mesa/"><img class="icon" src="assets/Tenismesa.svg" alt="Ícone de Tênis de mesa"></a>
+            <p>Tênis de mesa</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/tenis-em-cr/"><img class="icon" src="assets/Tenis.svg" alt="Ícone de Tênis em cadeira de rodas"></a>
+            <p>Tênis em cadeira de rodas</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/tiro-com-arco/"><img class="icon" src="assets/Tiro.svg" alt="Ícone de Tiro com arco"></a>
+            <p>Tiro com arco</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/tiro-esportivo/"><img class="icon" src="assets/TiroEsportivo.svg" alt="Ícone de Tiro esportivo"></a>
+            <p>Tiro esportivo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/ciclismo/"><img class="icon" src="assets/Ciclismo.svg" alt="Ícone de Ciclismo"></a>
+            <p>Ciclismo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/volei-sentado/"><img class="icon" src="assets/Volei.svg" alt="Ícone de Vôlei sentado"></a>
+            <p>Vôlei sentado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="icones" style="padding-top: 0;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <p class="subtitulo">ESPORTES PARALÍMPICOS DE INVERNO:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/esportes-de-inverno/"><img class="icon" src="assets/Biatlo.svg" alt="Ícone de Biatlo"></a>
+            <p>Biatlo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/esportes-de-inverno/"><img class="icon" src="assets/Curling.svg" alt="Ícone de Curling em cadeira de rodas"></a>
+            <p>Curling em cadeira de rodas</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/esportes-de-inverno/"><img class="icon" src="assets/EsquiAlpino.svg" alt="Ícone de Esqui alpino"></a>
+            <p>Esqui alpino</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/esportes-de-inverno/"><img class="icon" src="assets/Esqui.svg" alt="Ícone de Esqui cross-country"></a>
+            <p>Esqui cross-country</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/esportes-de-inverno/"><img class="icon" src="assets/Hoquei.svg" alt="Ícone de Hóquei no gelo"></a>
+            <p>Hóquei no gelo</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <a target="_blank" href="https://cpb.org.br/modalidades/esportes-de-inverno/"><img class="icon" src="assets/Snowboard.svg" alt="Ícone de Snowboard"></a>
+            <p>Snowboard</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="container bibliografia" style="background-color: #ebf1f2;">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <p>Bibliografia</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <p>CPB - Comitê Paralímpico Brasileiro. Disponível em: <a style= "text-decoration: underline; color:#000;" target="_blank" href="https://cpb.org.br">https://cpb.org.br</a>. Acesso em: 20 dez. 2024.</p>
+
+            <p>CPB - Comitê Paralímpico Brasileiro. Educação Paralímpica. Disponível em: <a style= "text-decoration: underline; color:#000;" target="_blank" href="https://www.educacaoparalimpica.org.br">https://www.educacaoparalimpica.org.br</a>. Acesso em: 20 dez. 2024.</p> 
+
+            <p>TV Brasil. YouTube. Título do vídeo: Caminhos da Reportagem - Brasil paralímpico, potência em movimento. Disponível em: <a style= "text-decoration: underline; color:#000;" target="_blank" href="https://www.youtube.com/watch?v=cUOTGEejADI">https://www.youtube.com/watch?v=cUOTGEejADI</a>. Acesso em: 20 dez. 2024.</p>
+
+            <p>TV INES. YouTube. Título do vídeo: A vida em Libras: Esportes Paralímpicos I. Disponível em: <a style= "text-decoration: underline; color:#000;" target="_blank" href="https://www.youtube.com/watch?v=QCQDso5A1e4">https://www.youtube.com/watch?v=QCQDso5A1e4</a>. Acesso em 20 dez. 2024.</p>  
+            <p>TV INES. YouTube. Título do vídeo: A vida em Libras: Esportes Paralímpicos I. Disponível em: <a style= "text-decoration: underline; color:#000;" target="_blank" href="https://www.youtube.com/watch?v=cUOTGEejADI">https://www.youtube.com/watch?v=cUOTGEejADI</a>. Acesso em 20 dez. 2024.</p> 
+            <p>Univesp. YouTube. Título do vídeo: Libras para todos: Centro Paralímpico Brasileiro. Disponível em: <a style= "text-decoration: underline; color:#000;" target="_blank" href="https://youtu.be/zLWOtWj-dqU">https://youtu.be/zLWOtWj-dqU</a>. Acesso em 20 dez. 2024.</p>
+            <p>Univesp. YouTube. Título do vídeo: Libras para todos: Esportes. Disponível em: <a style= "text-decoration: underline; color:#000;" target="_blank" href="https://youtu.be/Z2ZZ-4waNjQ">https://youtu.be/Z2ZZ-4waNjQ</a>. Acesso em 20 dez. 2024. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer>
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+          <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+          <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+          <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
+          <div>Compartilhe: <div class="sharing"></div></div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://forms.office.com/r/RJBQc2VVgj" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "História+do+Brasil+nos+Jogos+Paralímpicos" -->
+        <a class="btn btn-secondary" href="https://forms.office.com/r/BU3heRJ9ZP" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- //////////////////////////////////////////////////////////
+  AVISO =+960px
+  Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar
+  ///////////////////////////////////////////////////////////////-->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Ciência, Tecnologia e Inovação</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Marcos Augusto Francisco Borges</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Lubienska Cristina Lucas Jaquiê Ribeiro</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Coordenação</span>Wesley de Souza Lima</p>
+          <p><span class="funcao">Roteirização, Design Instrucional e tradução em espanhol</span>Vanessa Maria Davanzo</p>
+          <p><span class="funcao">Design Instrucional e tradução em italiano</span>Claudia Mori</p>
+          <p><span class="funcao">Design Instrucional e tradução em inglês</span>Jéssica Maria da Silva Queiroz</p>
+          <p><span class="funcao">Ilustração</span>Pedro Henrique De Almeida Belem</p>
+          <p><span class="funcao">Layout</span>Pedro Henrique De Almeida Belem</p>
+          <p><span class="funcao">Programação</span>Celso de Oliveira</p>
+          <p><span class="funcao">Revisão de texto</span>Valteir Benedito Vaz</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Dezembro/2024</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [
+        {
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>
